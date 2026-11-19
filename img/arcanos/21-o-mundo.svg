@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
+  <title>O Mundo</title>
+  <g fill="none" stroke="#a35cff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="60" cy="100" rx="30" ry="52"/>
+    <ellipse cx="60" cy="100" rx="22" ry="44" stroke-width="2" stroke-dasharray="3 5"/>
+    <path d="M54 44 L66 52 M66 44 L54 52 M54 148 L66 156 M66 148 L54 156"/>
+    <circle cx="18" cy="28" r="10"/>
+    <circle cx="102" cy="28" r="10"/>
+    <circle cx="18" cy="172" r="10"/>
+    <circle cx="102" cy="172" r="10"/>
+  </g>
+</svg>

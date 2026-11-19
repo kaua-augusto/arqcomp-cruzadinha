@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
+  <title>A Temperança</title>
+  <g fill="none" stroke="#02d7f2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(38 54) rotate(-38)"><path d="M-13 0 L13 0 Q13 18 0 21 Q-13 18 -13 0 Z M0 21 L0 32 M-8 32 L8 32"/></g>
+    <g transform="translate(82 136)"><path d="M-13 0 L13 0 Q13 18 0 21 Q-13 18 -13 0 Z M0 21 L0 32 M-8 32 L8 32"/></g>
+    <path d="M48 50 C74 62 60 104 80 132"/>
+    <path d="M44 58 C66 72 52 108 74 133" stroke-width="2"/>
+    <path d="M20 186 Q40 178 60 186 Q80 194 100 186" stroke-width="2"/>
+  </g>
+</svg>

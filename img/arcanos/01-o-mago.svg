@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
+  <title>O Mago</title>
+  <g fill="none" stroke="#fcee0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 44 C40 30 54 30 60 44 C66 58 80 58 80 44 C80 30 66 30 60 44 C54 58 40 58 40 44 Z"/>
+    <rect x="16" y="132" width="88" height="8"/>
+    <path d="M24 140 L24 180 M96 140 L96 180"/>
+    <path d="M26 108 L42 108 L38 120 L30 120 Z M34 120 L34 132 M28 132 L40 132"/>
+    <line x1="54" y1="130" x2="54" y2="96"/>
+    <circle cx="54" cy="92" r="4"/>
+    <line x1="70" y1="130" x2="70" y2="90"/>
+    <path d="M64 120 L76 120 M70 90 L67 96 M70 90 L73 96"/>
+    <circle cx="88" cy="122" r="8"/>
+    <path d="M88 117 L89.2 120.4 L92.8 120.5 L89.9 122.6 L90.9 126 L88 124 L85.1 126 L86.1 122.6 L83.2 120.5 L86.8 120.4 Z"/>
+  </g>
+</svg>

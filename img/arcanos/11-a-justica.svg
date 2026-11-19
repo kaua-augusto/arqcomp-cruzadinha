@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
+  <title>A Justiça</title>
+  <g fill="none" stroke="#fcee0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 40 L60 150 M46 150 L74 150 M60 150 L60 172"/>
+    <circle cx="60" cy="177" r="4"/>
+    <path d="M24 72 L96 72"/>
+    <circle cx="60" cy="72" r="3" fill="#0b0816"/>
+    <path d="M24 72 L14 104 M24 72 L34 104 M96 72 L86 104 M96 72 L106 104" stroke-width="2"/>
+    <path d="M12 104 Q24 118 36 104 Z M84 104 Q96 118 108 104 Z" fill="#0b0816"/>
+  </g>
+</svg>

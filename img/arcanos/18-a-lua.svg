@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
+  <title>A Lua</title>
+  <g fill="none" stroke="#a35cff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M68 26 A26 26 0 1 0 68 78 A20 20 0 1 1 68 26 Z" fill="#0b0816"/>
+    <path d="M46 92 Q50 99 46 102 Q42 99 46 92 Z"/>
+    <path d="M60 104 Q64 111 60 114 Q56 111 60 104 Z"/>
+    <path d="M74 92 Q78 99 74 102 Q70 99 74 92 Z"/>
+    <path d="M54 120 Q58 127 54 130 Q50 127 54 120 Z"/>
+    <path d="M68 120 Q72 127 68 130 Q64 127 68 120 Z"/>
+    <path d="M12 190 L12 132 L22 118 L32 132 L32 190"/>
+    <path d="M88 190 L88 132 L98 118 L108 132 L108 190"/>
+    <rect x="19" y="140" width="6" height="10"/>
+    <rect x="95" y="140" width="6" height="10"/>
+  </g>
+</svg>

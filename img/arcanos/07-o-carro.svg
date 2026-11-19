@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
+  <title>O Carro</title>
+  <g fill="none" stroke="#02d7f2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 64 Q60 40 94 64"/>
+    <path d="M34 64 L34 104 M86 64 L86 104"/>
+    <path d="M48 52 L49 55 L52 56 L49 57 L48 60 L47 57 L44 56 L47 55 Z"/>
+    <path d="M60 47 L61 50 L64 51 L61 52 L60 55 L59 52 L56 51 L59 50 Z"/>
+    <path d="M72 52 L73 55 L76 56 L73 57 L72 60 L71 57 L68 56 L71 55 Z"/>
+    <rect x="30" y="104" width="60" height="46" fill="#0b0816"/>
+    <path d="M30 120 L90 120"/>
+    <circle cx="22" cy="146" r="14"/>
+    <circle cx="98" cy="146" r="14"/>
+    <path d="M22 132 L22 160 M8 146 L36 146 M98 132 L98 160 M84 146 L112 146" stroke-width="2"/>
+    <circle cx="38" cy="172" r="5"/><path d="M42 176 Q52 176 56 190 L34 190 L35 177"/>
+    <circle cx="82" cy="172" r="5"/><path d="M78 176 Q68 176 64 190 L86 190 L85 177"/>
+  </g>
+</svg>
