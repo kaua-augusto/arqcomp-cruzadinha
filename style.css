@@ -1,0 +1,520 @@
+:root {
+  --base: #0b0816;
+  --surface: #150f26;
+  --border: #3b2b63;
+  --text: #e8e6f0;
+  --muted: #a9a6ba;
+  --yellow: #fcee0a;
+  --cyan: #02d7f2;
+  --magenta: #ff2a6d;
+  --purple: #a35cff;
+  --purple-deep: #2a1552;
+  --glow: 0 0 18px #a35cff66;
+  --chromatic-shadow: 2px 0 var(--magenta), -2px 0 var(--cyan);
+  --cut-corners: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  --font-mono: Consolas, "Courier New", monospace;
+  --font-display: "Chakra Petch", sans-serif;
+  --footer-height: 56px;
+  --gutter: 10%;
+  --largura-carta: 260px;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: radial-gradient(circle at 50% 0, var(--purple-deep), var(--base) 70%) fixed var(--base);
+  font: 16px/1.5 var(--font-mono);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--yellow);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 3px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--cyan);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--base);
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid var(--yellow);
+}
+
+@keyframes glitch {
+  33% {
+    text-shadow: -2px 1px var(--magenta), 2px -1px var(--cyan);
+  }
+  66% {
+    text-shadow: 2px -1px var(--magenta), -2px 1px var(--cyan);
+  }
+}
+
+.cabecalho {
+  display: grid;
+  gap: 8px;
+  padding: 40px var(--gutter) 0;
+}
+
+.brand {
+  font: 700 48px/1.2 var(--font-display);
+  letter-spacing: 0.08em;
+  text-shadow: var(--chromatic-shadow);
+  animation: glitch 0.3s 0.4s 2;
+}
+
+.section-label {
+  color: var(--cyan);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 8px 20px;
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-solid {
+  color: var(--base);
+  background: var(--yellow);
+}
+
+.button-pista,
+.button-revelar {
+  padding: 4px 14px;
+  background: var(--base);
+  font-size: 15px;
+}
+
+.button-pista {
+  align-self: flex-start;
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.button-revelar {
+  border-color: var(--magenta);
+  color: var(--magenta);
+}
+
+.button:hover {
+  border-color: var(--cyan);
+  color: var(--base);
+  background: var(--cyan);
+  box-shadow: var(--glow);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  padding: 32px var(--gutter) 48px;
+}
+
+.placar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 32px;
+  padding: 16px 24px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  clip-path: var(--cut-corners);
+}
+
+.placar p {
+  color: var(--text);
+}
+
+.placar span {
+  color: var(--yellow);
+  font: 700 24px var(--font-display);
+}
+
+.placar-botao {
+  margin-left: auto;
+}
+
+.como-jogar {
+  font-size: 14px;
+}
+
+.como-jogar strong {
+  color: var(--cyan);
+}
+
+.mao {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--largura-carta);
+  gap: 20px;
+  padding: 16px 4px 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carta {
+  --motivo: color-mix(in srgb, var(--cor-arcano) 14%, transparent);
+  perspective: 1200px;
+  scroll-snap-align: start;
+  animation: distribuir 0.5s calc(var(--ordem) * 90ms) backwards;
+}
+
+.carta-interior {
+  display: grid;
+  aspect-ratio: 7 / 12;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.carta-pergunta,
+.carta-resposta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: 1 / 1;
+  padding: 22px 18px;
+  border: 2px solid var(--cor-arcano);
+  outline: 1px solid color-mix(in srgb, var(--cor-arcano) 60%, transparent);
+  outline-offset: -8px;
+  overflow-wrap: anywhere;
+  clip-path: var(--cut-corners);
+  backface-visibility: hidden;
+}
+
+.arcano-numero {
+  color: var(--cor-arcano);
+  font: 700 24px var(--font-display);
+  text-align: center;
+}
+
+.arcano-imagem {
+  align-self: center;
+  width: 36%;
+}
+
+.arcano-nome {
+  padding: 6px;
+  border-block: 1px solid var(--cor-arcano);
+  color: var(--cor-arcano);
+  background: var(--base);
+  font: 700 17px var(--font-display);
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: var(--chromatic-shadow);
+}
+
+.carta-pergunta {
+  transition: visibility 0.3s;
+}
+
+.carta-numero {
+  color: var(--text);
+  font: 700 14px var(--font-display);
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.carta-pistas {
+  margin: 0;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid color-mix(in srgb, var(--cyan) 40%, transparent);
+  background: color-mix(in srgb, var(--base) 85%, transparent);
+  font-size: 14px;
+}
+
+.carta-pistas li + li {
+  margin-top: 8px;
+}
+
+.carta-pistas li::marker {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.carta-pergunta label {
+  margin-top: auto;
+  margin-bottom: -4px;
+  color: var(--cyan);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.carta-resposta {
+  border-color: var(--yellow);
+  text-align: center;
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+.carta-resposta .arcano-imagem {
+  width: 26%;
+}
+
+.carta-termo {
+  font: 700 18px var(--font-display);
+}
+
+.carta-explicacao {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.carta-gemeo {
+  padding: 6px;
+  background: var(--base);
+  font-size: 13px;
+}
+
+.carta-gemeo strong {
+  color: var(--magenta);
+}
+
+.motivo-louco {
+  background: repeating-linear-gradient(135deg, var(--motivo) 0 2px, transparent 2px 18px) var(--base);
+}
+
+.motivo-mago {
+  background:
+    radial-gradient(circle at 12px 20px, var(--motivo) 3px, transparent 4px) 0 0 / 32px 32px,
+    linear-gradient(90deg, transparent 11px, var(--motivo) 11px 13px, transparent 13px) 0 0 / 32px 32px,
+    linear-gradient(transparent 19px, var(--motivo) 19px 21px, transparent 21px) 0 0 / 64px 32px,
+    var(--base);
+}
+
+.motivo-sacerdotisa {
+  background:
+    repeating-linear-gradient(60deg, var(--motivo) 0 1px, transparent 1px 16px),
+    repeating-linear-gradient(-60deg, var(--motivo) 0 1px, transparent 1px 16px),
+    repeating-linear-gradient(var(--motivo) 0 1px, transparent 1px 16px),
+    var(--base);
+}
+
+.motivo-imperatriz {
+  background: radial-gradient(circle, var(--motivo) 1.5px, transparent 2px) 0 0 / 10px 10px var(--base);
+}
+
+.motivo-imperador {
+  background:
+    linear-gradient(90deg, var(--motivo) 1px, transparent 1px) 0 0 / 20px 20px,
+    linear-gradient(var(--motivo) 1px, transparent 1px) 0 0 / 20px 20px,
+    var(--base);
+}
+
+.motivo-hierofante {
+  background: repeating-linear-gradient(var(--motivo) 0 1px, transparent 1px 6px) var(--base);
+}
+
+.motivo-enamorados {
+  background: linear-gradient(90deg, var(--motivo), transparent 50%, var(--motivo)) var(--base);
+}
+
+.motivo-carro {
+  background: repeating-linear-gradient(170deg, transparent 0 12px, var(--motivo) 12px 13px, transparent 13px 20px, var(--motivo) 20px 22px) var(--base);
+}
+
+.motivo-eremita {
+  background: radial-gradient(circle at 50% 25%, color-mix(in srgb, var(--cor-arcano) 22%, transparent), transparent 45%) var(--base);
+}
+
+.motivo-roda {
+  background: repeating-radial-gradient(circle at 50% 20%, var(--motivo) 0 1px, transparent 1px 14px) var(--base);
+}
+
+.motivo-justica {
+  background:
+    linear-gradient(90deg, transparent calc(50% - 1px), var(--motivo) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(90deg, transparent 20%, var(--motivo), transparent 80%),
+    var(--base);
+}
+
+.motivo-temperanca {
+  background: radial-gradient(circle at 50% 0, transparent 9px, var(--motivo) 10px 11px, transparent 12px) 0 0 / 28px 16px var(--base);
+}
+
+.motivo-torre {
+  background:
+    linear-gradient(135deg, var(--motivo) 25%, transparent 25%) -12px 0 / 24px 24px,
+    linear-gradient(225deg, var(--motivo) 25%, transparent 25%) -12px 0 / 24px 24px,
+    var(--base);
+}
+
+.motivo-estrela {
+  background:
+    radial-gradient(circle at 20% 30%, color-mix(in srgb, var(--cor-arcano) 50%, transparent) 1px, transparent 2px) 0 0 / 47px 53px,
+    radial-gradient(circle at 70% 80%, color-mix(in srgb, var(--cor-arcano) 40%, transparent) 1px, transparent 2px) 0 0 / 61px 41px,
+    var(--base);
+}
+
+.motivo-lua {
+  background: linear-gradient(var(--motivo), transparent 70%) var(--base);
+}
+
+.motivo-mundo {
+  background:
+    radial-gradient(circle at 0 0, var(--motivo) 48px, transparent 49px),
+    radial-gradient(circle at 100% 0, var(--motivo) 48px, transparent 49px),
+    radial-gradient(circle at 0 100%, var(--motivo) 48px, transparent 49px),
+    radial-gradient(circle at 100% 100%, var(--motivo) 48px, transparent 49px),
+    var(--base);
+}
+
+.carta-virada .carta-interior {
+  transform: rotateY(180deg);
+}
+
+.carta-virada .carta-pergunta {
+  visibility: hidden;
+}
+
+.carta-virada .carta-resposta {
+  visibility: visible;
+}
+
+.carta-virada .carta-resposta .arcano-nome {
+  animation: glitch 0.3s 0.6s 2;
+}
+
+.carta-errada .carta-pergunta {
+  border-color: var(--magenta);
+  outline-color: color-mix(in srgb, var(--magenta) 60%, transparent);
+}
+
+.carta-revelada .carta-resposta {
+  border-color: var(--magenta);
+}
+
+.carta-revelada .arcano-imagem {
+  filter: grayscale(1);
+}
+
+@keyframes distribuir {
+  from {
+    opacity: 0;
+    transform: translateX(calc(var(--ordem) * -100% - var(--ordem) * 20px)) rotate(-14deg);
+  }
+}
+
+@keyframes recolher {
+  to {
+    opacity: 0;
+    transform: translateX(calc(var(--ordem) * -100% - var(--ordem) * 20px)) rotate(-14deg);
+  }
+}
+
+.mao-recolhendo .carta {
+  animation: recolher 0.4s calc(var(--ordem) * 30ms) forwards;
+}
+
+.relatorio {
+  padding: 32px;
+  border: 1px solid var(--purple);
+  background: linear-gradient(to bottom right, var(--purple-deep), var(--base) 60%);
+  clip-path: var(--cut-corners);
+}
+
+.relatorio-pontos {
+  margin: 12px 0 24px;
+  color: var(--text);
+}
+
+.relatorio-pontos span {
+  color: var(--yellow);
+  font: 700 24px var(--font-display);
+}
+
+#ul_revisar {
+  padding-left: 20px;
+}
+
+#ul_revisar li + li {
+  margin-top: 8px;
+}
+
+#ul_revisar strong {
+  color: var(--yellow);
+}
+
+#p_sem_revisao {
+  color: var(--yellow);
+}
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  min-height: var(--footer-height);
+  padding: 12px var(--gutter);
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --gutter: 5%;
+    --largura-carta: 240px;
+  }
+
+  .brand {
+    font-size: 36px;
+  }
+
+  .placar-botao {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carta-interior,
+  .carta-pergunta {
+    transition: none;
+  }
+
+  .brand,
+  .carta,
+  .mao-recolhendo .carta,
+  .carta-virada .carta-resposta .arcano-nome {
+    animation: none;
+  }
+}

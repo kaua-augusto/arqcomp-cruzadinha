@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NETSCAN | Arquitetura Computacional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&display=swap">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1 class="brand">NETSCAN</h1>
+    <p class="section-label">Leia as cartas e revele os arcanos da Arquitetura Computacional</p>
+  </header>
+
+  <main>
+    <section class="placar" aria-label="Placar">
+      <p aria-live="polite"><span id="span_acertos">0</span> de <span id="span_total">12</span> arcanos revelados</p>
+      <p aria-live="polite"><span id="span_pontos">0</span> pontos</p>
+      <button class="button button-solid placar-botao" id="btn_trocar_mao" type="button" onclick="trocarDeMao()">Trocar de mão</button>
+    </section>
+
+    <p class="como-jogar">
+      <strong>Como jogar:</strong> leia a pista de cada arcano, digite o termo e aperte Enter.
+      Acertar com 1, 2 ou 3 pistas vale 3, 2 ou 1 ponto. Depois de 2 erros na mesma carta, você pode revelar a resposta.
+    </p>
+
+    <div class="mao" id="div_cartas" aria-label="Sua mão de arcanos"></div>
+
+    <section class="relatorio" id="section_relatorio" hidden>
+      <h2>Fim da leitura</h2>
+      <p class="relatorio-pontos">Você fez <span id="span_pontos_finais">0</span> de <span id="span_pontos_maximo">36</span> pontos.</p>
+      <div id="div_revisar">
+        <h3>Para revisar</h3>
+        <ul id="ul_revisar"></ul>
+      </div>
+      <p id="p_sem_revisao" hidden>Leitura perfeita: nenhum arcano para revisar. Parabéns, netrunner!</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>NETSCAN &copy; 2026 — Arquitetura Computacional, SPTech</p>
+  </footer>
+
+  <script src="./termos.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
