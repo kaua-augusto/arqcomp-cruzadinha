@@ -20,7 +20,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A CPU executa as instruções dos programas no ciclo buscar, decodificar e executar, usando ULA, UC e registradores.',
-    gemeo: 'MICROCONTROLADOR'
+    gemeo: 'MICROCONTROLADOR',
+    grupo: 'processador'
   },
   {
     resposta: 'ULA',
@@ -43,7 +44,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A ULA faz as operações aritméticas e lógicas da CPU. Ela só calcula: quem decide o que calcular é a UC.',
-    gemeo: 'UC'
+    gemeo: 'UC',
+    grupo: 'processador'
   },
   {
     resposta: 'UC',
@@ -66,7 +68,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A UC decodifica as instruções e envia sinais que comandam as outras partes da CPU, inclusive a ULA.',
-    gemeo: 'ULA'
+    gemeo: 'ULA',
+    grupo: 'processador'
   },
   {
     resposta: 'REGISTRADORES',
@@ -89,7 +92,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'Registradores são as memórias mais rápidas e menores do computador, dentro da própria CPU, com os dados da instrução atual.',
-    gemeo: 'CACHE'
+    gemeo: 'CACHE',
+    grupo: 'memoria'
   },
   {
     resposta: 'RAM',
@@ -112,7 +116,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A RAM é a memória principal: rápida, lida e gravada o tempo todo, mas volátil. Ao desligar, o conteúdo some.',
-    gemeo: 'ROM'
+    gemeo: 'ROM',
+    grupo: 'memoria'
   },
   {
     resposta: 'ROM',
@@ -135,7 +140,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A ROM é não volátil e vem gravada de fábrica, sem ser regravada no uso normal. Guarda firmware, como a antiga BIOS.',
-    gemeo: 'RAM'
+    gemeo: 'RAM',
+    grupo: 'memoria'
   },
   {
     resposta: 'EEPROM',
@@ -158,7 +164,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A EEPROM é não volátil e regravável byte a byte pelo circuito. Tem pouca capacidade e guarda configurações.',
-    gemeo: 'FLASH'
+    gemeo: 'FLASH',
+    grupo: 'memoria'
   },
   {
     resposta: 'FLASH',
@@ -181,7 +188,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A Flash é uma memória não volátil derivada da EEPROM que apaga por blocos. Por isso é rápida e tem grande capacidade.',
-    gemeo: 'EEPROM'
+    gemeo: 'EEPROM',
+    grupo: 'memoria'
   },
   {
     resposta: 'CACHE',
@@ -204,7 +212,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'A cache guarda cópias dos dados mais usados da RAM perto da CPU, em níveis L1, L2 e L3, para evitar espera.',
-    gemeo: 'REGISTRADORES'
+    gemeo: 'REGISTRADORES',
+    grupo: 'memoria'
   },
   {
     resposta: 'MEMORIADEMASSA',
@@ -227,7 +236,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'Memória de massa é o armazenamento não volátil e de grande capacidade, como HD e SSD. É mais lenta que a RAM.',
-    gemeo: 'RAM'
+    gemeo: 'RAM',
+    grupo: 'memoria'
   },
   {
     resposta: 'DMA',
@@ -250,7 +260,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'O DMA transfere dados entre dispositivos e RAM sem a CPU copiar cada byte, deixando o processador livre.',
-    gemeo: 'CPU'
+    gemeo: 'CPU',
+    grupo: 'barramento'
   },
   {
     resposta: 'ADDRESSBUS',
@@ -273,7 +284,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'O address bus leva da CPU o endereço da posição de memória a ser acessada. É unidirecional e não carrega o dado.',
-    gemeo: 'DATABUS'
+    gemeo: 'DATABUS',
+    grupo: 'barramento'
   },
   {
     resposta: 'DATABUS',
@@ -296,7 +308,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'O data bus transporta os dados entre CPU, memória e dispositivos, nos dois sentidos. A posição vem pelo address bus.',
-    gemeo: 'ADDRESSBUS'
+    gemeo: 'ADDRESSBUS',
+    grupo: 'barramento'
   },
   {
     resposta: 'MICROCONTROLADOR',
@@ -319,7 +332,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'O microcontrolador reúne processador, memória e entradas e saídas num só chip, para comandar um aparelho específico.',
-    gemeo: 'CPU'
+    gemeo: 'CPU',
+    grupo: 'processador'
   },
   {
     resposta: 'DUALCORE',
@@ -342,7 +356,8 @@ var TERMOS = [
       ]
     },
     explicacao: 'Dual core é um processador com dois núcleos no mesmo chip, que executam duas tarefas em paralelo.',
-    gemeo: 'QUADCORE'
+    gemeo: 'QUADCORE',
+    grupo: 'processador'
   },
   {
     resposta: 'QUADCORE',
@@ -365,6 +380,7 @@ var TERMOS = [
       ]
     },
     explicacao: 'Quad core é um processador com quatro núcleos no mesmo chip, que executam quatro tarefas em paralelo.',
-    gemeo: 'DUALCORE'
+    gemeo: 'DUALCORE',
+    grupo: 'processador'
   }
 ];
