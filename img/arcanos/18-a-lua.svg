@@ -1,15 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>A Lua</title>
   <g fill="none" stroke="#a35cff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M68 26 A26 26 0 1 0 68 78 A20 20 0 1 1 68 26 Z" fill="#0b0816"/>
-    <path d="M46 92 Q50 99 46 102 Q42 99 46 92 Z"/>
-    <path d="M60 104 Q64 111 60 114 Q56 111 60 104 Z"/>
-    <path d="M74 92 Q78 99 74 102 Q70 99 74 92 Z"/>
-    <path d="M54 120 Q58 127 54 130 Q50 127 54 120 Z"/>
-    <path d="M68 120 Q72 127 68 130 Q64 127 68 120 Z"/>
-    <path d="M12 190 L12 132 L22 118 L32 132 L32 190"/>
-    <path d="M88 190 L88 132 L98 118 L108 132 L108 190"/>
-    <rect x="19" y="140" width="6" height="10"/>
-    <rect x="95" y="140" width="6" height="10"/>
+    <circle cx="60" cy="34" r="14" fill="#0b0816"/>
+    <path d="M56 22 A12 12 0 1 0 56 46 A16 16 0 0 1 56 22 Z"/>
+    <path d="M77.7 37.5 L83.5 38.7 M75 44 L80 47.3 M70 49 L73.3 54 M63.5 51.7 L64.7 57.5 M56.5 51.7 L55.3 57.5 M50 49 L46.7 54 M45 44 L40 47.3 M42.3 37.5 L36.5 38.7 M42.3 30.5 L36.5 29.3 M45 24 L40 20.7 M50 19 L46.7 14 M56.5 16.3 L55.3 10.5 M63.5 16.3 L64.7 10.5 M70 19 L73.3 14 M75 24 L80 20.7 M77.7 30.5 L83.5 29.3" stroke-width="2"/>
+    <path d="M44 62 L46 68 M60 64 L60 70 M76 62 L74 68 M52 76 L53 82 M68 76 L67 82" stroke-width="2"/>
+    <path d="M8 140 L8 76 L12 76 L12 70 L16 70 L16 76 L20 76 L20 70 L24 70 L24 76 L28 76 L28 140" fill="#0b0816"/>
+    <path d="M92 140 L92 76 L96 76 L96 70 L100 70 L100 76 L104 76 L104 70 L108 70 L108 76 L112 76 L112 140" fill="#0b0816"/>
+    <rect x="15" y="90" width="6" height="10" stroke-width="2"/>
+    <rect x="99" y="90" width="6" height="10" stroke-width="2"/>
+    <path d="M60 178 Q46 160 62 146 Q76 130 58 112 Q50 102 60 92" stroke-width="2" stroke-dasharray="3 4"/>
+    <path d="M18 168 L22 148 L28 142 L32 132 L36 142 L34 150 L32 168"/>
+    <path d="M102 168 L98 148 L92 142 L88 132 L84 142 L86 150 L88 168"/>
+    <path d="M4 168 L48 168 M72 168 L116 168"/>
+    <path d="M8 184 Q18 178 28 184 Q38 190 48 184 M72 184 Q82 178 92 184 Q102 190 112 184" stroke-width="2"/>
+    <path d="M54 186 Q60 176 66 186 Q60 194 54 186 Z M54 182 L48 174 M66 182 L72 174"/>
   </g>
 </svg>

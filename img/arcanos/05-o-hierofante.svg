@@ -1,10 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>O Hierofante</title>
   <g fill="none" stroke="#a35cff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M42 74 Q40 50 60 28 Q80 50 78 74 Z" fill="#0b0816"/>
-    <path d="M42 74 L78 74 M44 62 L76 62 M48 48 L72 48"/>
-    <path d="M60 28 L60 16 M54 21 L66 21"/>
-    <g transform="rotate(32 60 134)"><circle cx="60" cy="96" r="9"/><path d="M60 105 L60 172 M60 160 L70 160 M60 168 L70 168"/></g>
-    <g transform="rotate(-32 60 134)"><circle cx="60" cy="96" r="9"/><path d="M60 105 L60 172 M60 160 L70 160 M60 168 L70 168"/></g>
+    <rect x="8" y="48" width="12" height="124" fill="#0b0816"/>
+    <rect x="100" y="48" width="12" height="124" fill="#0b0816"/>
+    <path d="M48 76 L72 76 L82 142 L38 142 Z" fill="#0b0816"/>
+    <path d="M60 82 L60 140" stroke-width="2"/>
+    <path d="M70 82 L80 72 M80 72 L80 64 M83 72 L85 66"/>
+    <path d="M50 82 L36 96"/>
+    <path d="M34 40 L34 142 M28 50 L40 50 M26 56 L42 56 M24 62 L44 62"/>
+    <circle cx="60" cy="64" r="7" fill="#0b0816"/><path d="M54.5 63.5 L65.5 63.5" stroke-width="2"/>
+    <path d="M52 58 L52 46 L68 46 L68 58 M52 54 L68 54 M52 50 L68 50 M54 46 Q60 34 66 46 M60 38 L60 32"/>
+    <path d="M46 150 L74 168 M74 150 L46 168"/>
+    <circle cx="44" cy="148" r="3.5"/>
+    <circle cx="76" cy="148" r="3.5"/>
+    <path d="M74 168 L74 172 M46 168 L46 172" stroke-width="2"/>
+    <circle cx="24" cy="180" r="6" fill="#0b0816"/>
+    <circle cx="96" cy="180" r="6" fill="#0b0816"/>
+    <path d="M12 198 Q24 184 36 198 M84 198 Q96 184 108 198"/>
   </g>
 </svg>

@@ -1,12 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>A Roda da Fortuna</title>
   <g fill="none" stroke="#02d7f2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="60" cy="100" r="34"/>
-    <circle cx="60" cy="100" r="10"/>
-    <line x1="70" y1="100" x2="94" y2="100"/><line x1="67.1" y1="107.1" x2="84" y2="124"/><line x1="60" y1="110" x2="60" y2="134"/><line x1="52.9" y1="107.1" x2="36" y2="124"/><line x1="50" y1="100" x2="26" y2="100"/><line x1="52.9" y1="92.9" x2="36" y2="76"/><line x1="60" y1="90" x2="60" y2="66"/><line x1="67.1" y1="92.9" x2="84" y2="76"/>
-    <path d="M68 54.7 A46 46 0 0 1 105.3 108"/>
-    <path d="M97.3 104 L105.3 108 L109.3 100"/>
-    <path d="M52 145.3 A46 46 0 0 1 14.7 92"/>
-    <path d="M22.7 96 L14.7 92 L10.7 100"/>
+    <circle cx="14" cy="20" r="6"/>
+    <circle cx="106" cy="20" r="6"/>
+    <circle cx="14" cy="186" r="6"/>
+    <circle cx="106" cy="186" r="6"/>
+    <circle cx="60" cy="104" r="34" fill="#0b0816"/>
+    <circle cx="60" cy="104" r="24"/>
+    <path d="M68 104 L94 104 M65.7 109.7 L84 128 M60 112 L60 138 M54.3 109.7 L36 128 M52 104 L26 104 M54.3 98.3 L36 80 M60 96 L60 70 M65.7 98.3 L84 80" stroke-width="2"/>
+    <circle cx="60" cy="104" r="8" fill="#0b0816"/>
+    <path d="M54 54 L66 54 L68 66 L52 66 Z" fill="#0b0816"/>
+    <circle cx="60" cy="52" r="5" fill="#0b0816"/><path d="M56.5 51.5 L63.5 51.5" stroke-width="2"/>
+    <path d="M68 60 L72 34 M68 44 L76 44"/>
+    <path d="M22 58 Q12 74 22 88 Q32 102 22 116 Q12 130 22 146"/>
+    <path d="M22 146 L16 152 M22 146 L26 154" stroke-width="2"/>
+    <path d="M98 164 L96 142 L102 136 L100 128 L106 132 L106 140 L102 150 L104 164"/>
+    <path d="M30 174 L90 174" stroke-width="2" stroke-dasharray="4 4"/>
   </g>
 </svg>

@@ -1,9 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>Os Enamorados</title>
   <g fill="none" stroke="#ff2a6d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="60" cy="42" r="13"/>
-    <line x1="79" y1="42" x2="87" y2="42"/><line x1="76.5" y1="51.5" x2="83.4" y2="55.5"/><line x1="69.5" y1="58.5" x2="73.5" y2="65.4"/><line x1="60" y1="61" x2="60" y2="69"/><line x1="50.5" y1="58.5" x2="46.5" y2="65.4"/><line x1="43.5" y1="51.5" x2="36.6" y2="55.5"/><line x1="41" y1="42" x2="33" y2="42"/><line x1="43.5" y1="32.5" x2="36.6" y2="28.5"/><line x1="50.5" y1="25.5" x2="46.5" y2="18.6"/><line x1="60" y1="23" x2="60" y2="15"/><line x1="69.5" y1="25.5" x2="73.5" y2="18.6"/><line x1="76.5" y1="32.5" x2="83.4" y2="28.5"/>
-    <circle cx="36" cy="104" r="8"/><path d="M36 112 L36 150 M36 124 L52 136 M36 124 L26 142 M36 150 L28 182 M36 150 L44 182"/>
-    <circle cx="84" cy="104" r="8"/><path d="M84 112 L84 150 M84 124 L68 136 M84 124 L94 142 M84 150 L92 182 M84 150 L76 182"/>
+    <circle cx="60" cy="30" r="10"/>
+    <path d="M74 30 L80 30 M72.1 37 L77.3 40 M67 42.1 L70 47.3 M60 44 L60 50 M53 42.1 L50 47.3 M47.9 37 L42.7 40 M46 30 L40 30 M47.9 23 L42.7 20 M53 17.9 L50 12.7 M60 16 L60 10 M67 17.9 L70 12.7 M72.1 23 L77.3 20" stroke-width="2"/>
+    <path d="M54 52 Q30 34 18 60 Q36 56 52 64 M66 52 Q90 34 102 60 Q84 56 68 64" fill="#0b0816"/>
+    <path d="M54 52 L66 52 L68 72 L52 72 Z" fill="#0b0816"/>
+    <circle cx="60" cy="46" r="5" fill="#0b0816"/><path d="M56.5 45.5 L63.5 45.5" stroke-width="2"/>
+    <path d="M30 80 Q40 72 50 80 Q60 72 70 80 Q80 72 90 80" stroke-width="2"/>
+    <path d="M44 160 L60 112 L76 160" stroke-width="2"/>
+    <path d="M12 160 L12 104 M12 116 L6 108 M12 116 L18 106 M12 130 L6 122 M12 130 L18 120" stroke-width="2"/>
+    <path d="M108 160 L108 104 M108 104 Q100 112 108 120 Q116 128 108 136" stroke-width="2"/>
+    <circle cx="102" cy="108" r="2"/>
+    <circle cx="114" cy="114" r="2"/>
+    <path d="M24 116 L36 116 L40 160 L20 160 Z" fill="#0b0816"/>
+    <path d="M36 120 L46 108"/>
+    <circle cx="30" cy="106" r="6" fill="#0b0816"/><path d="M25.5 105.5 L34.5 105.5" stroke-width="2"/>
+    <path d="M84 116 L96 116 L100 160 L80 160 Z" fill="#0b0816"/>
+    <path d="M84 120 L76 106"/>
+    <circle cx="90" cy="106" r="6" fill="#0b0816"/><path d="M85.5 105.5 L94.5 105.5" stroke-width="2"/>
+    <path d="M84 104 L82 120 M96 104 L98 120" stroke-width="2"/>
+    <path d="M6 160 L114 160"/>
   </g>
 </svg>

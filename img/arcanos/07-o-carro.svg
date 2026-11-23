@@ -1,17 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>O Carro</title>
   <g fill="none" stroke="#02d7f2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M26 64 Q60 40 94 64"/>
-    <path d="M34 64 L34 104 M86 64 L86 104"/>
-    <path d="M48 52 L49 55 L52 56 L49 57 L48 60 L47 57 L44 56 L47 55 Z"/>
-    <path d="M60 47 L61 50 L64 51 L61 52 L60 55 L59 52 L56 51 L59 50 Z"/>
-    <path d="M72 52 L73 55 L76 56 L73 57 L72 60 L71 57 L68 56 L71 55 Z"/>
-    <rect x="30" y="104" width="60" height="46" fill="#0b0816"/>
-    <path d="M30 120 L90 120"/>
-    <circle cx="22" cy="146" r="14"/>
-    <circle cx="98" cy="146" r="14"/>
-    <path d="M22 132 L22 160 M8 146 L36 146 M98 132 L98 160 M84 146 L112 146" stroke-width="2"/>
-    <circle cx="38" cy="172" r="5"/><path d="M42 176 Q52 176 56 190 L34 190 L35 177"/>
-    <circle cx="82" cy="172" r="5"/><path d="M78 176 Q68 176 64 190 L86 190 L85 177"/>
+    <path d="M22 18 L98 18 L94 34 L26 34 Z" fill="#0b0816"/>
+    <path d="M36 23 L36.7 25.3 L39 26 L36.7 26.7 L36 29 L35.3 26.7 L33 26 L35.3 25.3 Z" stroke-width="2"/><path d="M50 23 L50.7 25.3 L53 26 L50.7 26.7 L50 29 L49.3 26.7 L47 26 L49.3 25.3 Z" stroke-width="2"/><path d="M64 23 L64.7 25.3 L67 26 L64.7 26.7 L64 29 L63.3 26.7 L61 26 L63.3 25.3 Z" stroke-width="2"/><path d="M78 23 L78.7 25.3 L81 26 L78.7 26.7 L78 29 L77.3 26.7 L75 26 L77.3 25.3 Z" stroke-width="2"/>
+    <path d="M30 34 L30 106 M90 34 L90 106"/>
+    <path d="M50 66 L70 66 L72 108 L48 108 Z" fill="#0b0816"/>
+    <path d="M50 78 L70 78 M60 66 L60 78"/>
+    <path d="M68 70 L80 58 L82 46"/>
+    <circle cx="60" cy="56" r="6" fill="#0b0816"/><path d="M55.5 55.5 L64.5 55.5" stroke-width="2"/>
+    <path d="M60 40 L61.1 42.9 L64 44 L61.1 45.1 L60 48 L58.9 45.1 L56 44 L58.9 42.9 Z" stroke-width="2"/>
+    <rect x="22" y="104" width="76" height="34" fill="#0b0816"/>
+    <path d="M50 120 Q60 112 70 120 M44 116 Q52 124 60 120 Q68 124 76 116"/>
+    <path d="M14 128 A12 12 0 0 1 14 152 M106 128 A12 12 0 0 0 106 152"/>
+    <path d="M20 160 L34 160 L36 172 L18 172 Z" fill="#0b0816"/>
+    <circle cx="27" cy="158" r="5" fill="#0b0816"/><path d="M23.5 157.5 L30.5 157.5" stroke-width="2"/>
+    <path d="M18 174 L44 174 L48 190 L16 190 Z" fill="#0b0816"/>
+    <path d="M86 160 L100 160 L102 172 L84 172 Z" fill="#0b0816"/>
+    <circle cx="93" cy="158" r="5" fill="#0b0816"/><path d="M89.5 157.5 L96.5 157.5" stroke-width="2"/>
+    <path d="M76 174 L102 174 L104 190 L72 190 Z" fill="#0b0816"/>
   </g>
 </svg>

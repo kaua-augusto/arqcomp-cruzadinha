@@ -1,12 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>O Mundo</title>
   <g fill="none" stroke="#a35cff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="60" cy="100" rx="30" ry="52"/>
-    <ellipse cx="60" cy="100" rx="22" ry="44" stroke-width="2" stroke-dasharray="3 5"/>
-    <path d="M54 44 L66 52 M66 44 L54 52 M54 148 L66 156 M66 148 L54 156"/>
-    <circle cx="18" cy="28" r="10"/>
-    <circle cx="102" cy="28" r="10"/>
-    <circle cx="18" cy="172" r="10"/>
-    <circle cx="102" cy="172" r="10"/>
+    <ellipse cx="60" cy="104" rx="32" ry="58"/>
+    <path d="M92 104 L97.6 113.2 M90.4 121.9 L94.2 132.9 M85.9 138.1 L87.3 149.8 M78.8 150.9 L77.8 162.3 M69.9 159.2 L66.6 169 M60 162 L54.7 169.4 M50.1 159.2 L43.3 163.3 M41.2 150.9 L33.6 151.5 M34.1 138.1 L26.4 135 M29.6 121.9 L22.6 115.5 M28 104 L22.4 94.8 M29.6 86.1 L25.8 75.1 M34.1 69.9 L32.7 58.2 M41.2 57.1 L42.2 45.7 M50.1 48.8 L53.4 39 M60 46 L65.3 38.6 M69.9 48.8 L76.7 44.7 M78.8 57.1 L86.4 56.5 M85.9 69.9 L93.6 73 M90.4 86.1 L97.4 92.5" stroke-width="2"/>
+    <path d="M54 40 L66 52 M66 40 L54 52 M54 156 L66 168 M66 156 L54 168" stroke-width="2"/>
+    <path d="M56 72 L64 72 L68 110 L52 110 Z" fill="#0b0816"/>
+    <path d="M54 76 Q66 92 64 112" stroke-width="2"/>
+    <path d="M56 110 L50 140 M64 110 L70 128 L58 134"/>
+    <path d="M56 76 L44 88 M64 76 L76 88 M42 80 L46 96 M74 80 L78 96"/>
+    <circle cx="60" cy="64" r="6" fill="#0b0816"/><path d="M55.5 63.5 L64.5 63.5" stroke-width="2"/>
+    <circle cx="14" cy="20" r="8" fill="#0b0816"/>
+    <path d="M6 12 Q14 4 22 12" stroke-width="2"/>
+    <circle cx="106" cy="20" r="8" fill="#0b0816"/>
+    <path d="M114 18 L120 22 L114 24" stroke-width="2"/>
+    <circle cx="14" cy="186" r="8" fill="#0b0816"/>
+    <path d="M8 180 Q2 172 6 168 M20 180 Q26 172 22 168" stroke-width="2"/>
+    <circle cx="106" cy="186" r="8" fill="#0b0816"/>
+    <path d="M116 186 L119 186 M114.1 191.9 L116.5 193.6 M109.1 195.5 L110 198.4 M102.9 195.5 L102 198.4 M97.9 191.9 L95.5 193.6 M96 186 L93 186 M97.9 180.1 L95.5 178.4 M102.9 176.5 L102 173.6 M109.1 176.5 L110 173.6 M114.1 180.1 L116.5 178.4" stroke-width="2"/>
   </g>
 </svg>

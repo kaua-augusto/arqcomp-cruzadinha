@@ -1,11 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img">
   <title>A Justiça</title>
   <g fill="none" stroke="#fcee0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M60 40 L60 150 M46 150 L74 150 M60 150 L60 172"/>
-    <circle cx="60" cy="177" r="4"/>
-    <path d="M24 72 L96 72"/>
-    <circle cx="60" cy="72" r="3" fill="#0b0816"/>
-    <path d="M24 72 L14 104 M24 72 L34 104 M96 72 L86 104 M96 72 L106 104" stroke-width="2"/>
-    <path d="M12 104 Q24 118 36 104 Z M84 104 Q96 118 108 104 Z" fill="#0b0816"/>
+    <rect x="8" y="40" width="12" height="136" fill="#0b0816"/>
+    <rect x="100" y="40" width="12" height="136" fill="#0b0816"/>
+    <path d="M20 60 L100 60" stroke-width="2" stroke-dasharray="3 5"/>
+    <path d="M48 74 L72 74 L82 152 L38 152 Z" fill="#0b0816"/>
+    <path d="M54 74 L60 92 L66 74"/>
+    <path d="M50 80 L40 98 M70 80 L82 92"/>
+    <path d="M40 24 L40 104 M34 92 L46 92 M40 104 L40 110"/>
+    <path d="M82 92 L82 72 M70 74 L94 74"/>
+    <path d="M70 74 L66 88 M70 74 L74 88 M64 88 Q70 94 76 88 M94 74 L90 88 M94 74 L98 88 M88 88 Q94 94 100 88" stroke-width="2"/>
+    <circle cx="60" cy="62" r="7" fill="#0b0816"/><path d="M54.5 61.5 L65.5 61.5" stroke-width="2"/>
+    <path d="M52 56 L52 48 L68 48 L68 56 M58 48 L60 44 L62 48"/>
+    <path d="M30 152 L90 152 L94 164 L26 164 Z" fill="#0b0816"/>
+    <path d="M6 180 L114 180"/>
   </g>
 </svg>
