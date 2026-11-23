@@ -18,20 +18,24 @@ NETSCAN is a study game made for Atividade Avaliativa III of the Computer Archit
 
 ## How to play
 
-Each match deals a hand of 12 cards in a single row. Every card is the major arcana of one term and shows its first clue. Type the term in the card and press **Enter**.
+Each match draws 12 cards and deals them in hands of 4. Every card is the major arcana of one term and shows its first clue. Type the term in the card and press **Enter**.
 
 | Rule | Description |
 | --- | --- |
 | Draw | Every match draws 12 of the 16 terms at random, numbered `Carta 01` to `Carta 12`. |
 | Clues | Each term has a pool of 7 clues: 3 about its function, 2 about what sets it apart from the term it is confused with, and 2 concrete examples. Each card draws one clue of each group, so a new match rarely repeats the same clues (12 combinations per term). |
+| Options | Every card also shows 3 possible answers from the 16 terms: the right one, its twin (the term it is most often confused with) and another term of the same family (memory, processor or bus), in random order. The answer is still typed. |
 | More clues | `+ Pista` shows clue 2 (difference) and then clue 3 (concrete example). |
 | Checking | Enter checks that card only. Accents, spaces and punctuation are ignored, so `memória de massa` matches `MEMORIADEMASSA`. Enter on a blank card does nothing. |
 | Right answer | The card flips with a yellow frame and shows the term, a short explanation and "Não confunda com", the term it is most often confused with. |
+| Feedback | Every right or wrong answer shows a message at the top of the screen for 1.5 seconds: "Acertou! +N pts" with the points earned, or "Resposta errada. Tente de novo." |
 | Wrong answer | The card gets a magenta frame and stays editable. Typing again clears the magenta. |
 | Reveal | After 2 errors on the same card, `Revelar` shows the answer. The card flips with a magenta frame and a grayscale arcana, and scores 0. |
 | Counter | `X de 12 arcanos revelados` counts right answers; the points are shown next to it. |
 | Report | When no card is open, the report shows the final points and a "Para revisar" list with every term that was revealed, had an error or needed all 3 clues, each with its explanation. |
-| New hand | `Trocar de mão` collects the cards, clears everything and deals a new hand with new clues. |
+| Next hand | When the 4 cards of the hand are closed, the next hand arrives by itself after 3 seconds. The counter shows how many cards are left in the deck. |
+| Swap hand | `Trocar de mão` puts the open cards back at the end of the deck and deals the next ones, so no term is lost. |
+| New match | `Nova partida` collects the cards, clears everything and starts a new match with new terms and clues. |
 
 Scoring:
 
@@ -58,7 +62,7 @@ Every requirement of the assignment is still met:
 | O jogador digita as letras no tabuleiro | O jogador digita a resposta em cada carta |
 | Botão Conferir mostrando as palavras certas e erradas | O Enter no campo de cada carta faz o papel do Conferir, uma carta por vez: marca certa (amarelo) ou errada (magenta) |
 | Contador de acertos, ex.: "8 de 12 palavras" | `X de 12 arcanos revelados` |
-| Botão Reiniciar que limpa o tabuleiro | O botão "Trocar de mão" é o Reiniciar: recolhe as cartas, limpa tudo e distribui 12 novas |
+| Botão Reiniciar que limpa o tabuleiro | O botão "Nova partida" é o Reiniciar: recolhe as cartas, limpa tudo e sorteia 12 novas |
 | HTML, CSS e JS puros, com `index.html` na raiz | Igual |
 | Pistas com no máximo 15 palavras, sem a resposta, corretas e com resposta única | Mesmas regras, conferidas por script |
 
