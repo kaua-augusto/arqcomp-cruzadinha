@@ -20,13 +20,23 @@
     <section class="placar" aria-label="Placar">
       <p aria-live="polite"><span id="span_acertos">0</span> de <span id="span_total">12</span> arcanos revelados</p>
       <p aria-live="polite"><span id="span_pontos">0</span> pontos</p>
-      <button class="button button-solid placar-botao" id="btn_trocar_mao" type="button" onclick="trocarDeMao()">Trocar de mão</button>
+      <p aria-live="polite"><span id="span_baralho">8</span> no baralho</p>
+      <div class="placar-botoes">
+        <button class="button button-solid" id="btn_trocar_mao" type="button" onclick="trocarDeMao()">Trocar de mão</button>
+        <button class="button button-outline" id="btn_nova_partida" type="button" onclick="novaPartida()">Nova partida</button>
+      </div>
     </section>
 
     <p class="como-jogar">
-      <strong>Como jogar:</strong> leia a pista de cada arcano, digite o termo e aperte Enter.
+      <strong>Como jogar:</strong> leia a pista de cada arcano, veja as 3 opções de resposta, digite o termo e aperte Enter.
       Acertar com 1, 2 ou 3 pistas vale 3, 2 ou 1 ponto. Depois de 2 erros na mesma carta, você pode revelar a resposta.
+      Fechou as 4 cartas da mão? A próxima chega sozinha. Trocar de mão devolve as cartas abertas ao baralho.
     </p>
+
+    <div class="aviso" id="div_aviso" role="status" aria-live="polite" hidden>
+      <p id="p_aviso_certo">Acertou! <strong>+<span id="span_aviso_pontos">3</span> pts</strong></p>
+      <p id="p_aviso_errado">Resposta errada. <strong>Tente de novo.</strong></p>
+    </div>
 
     <div class="mao" id="div_cartas" aria-label="Sua mão de arcanos"></div>
 
